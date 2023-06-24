@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Summary Sheet | Frontend Mentor</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-PaleBlue flex justify-center items-center h-screen">
+    <section class="container w-80 bg-White rounded-xl flex flex-col justify-center md:flex-row md:w-2/3 md:h-1/2 md:items-center md:justify-center">
+        <div class="blue bg-gradient-to-b from-LightSlateBlue to-LightRoyalBlue rounded-2xl flex justify-center items-center text-center flex-col space-y-4 py-6 md:w-full md:h-full">
+            <p class="text-PaleBlue">Your Result</p>
+            <div class="circle w-28 h-28 rounded-full flex flex-col justify-center items-center">
+                <h1 class="head">76</h1>
+                <p class="p-0 m-0 text-LightLavender text-xs">of 100</p>
+            </div>
+            <div class="w-3/4">
+                <h3 class="text-PaleBlue text-xl py-2">Great</h3>
+                <p class="text-sm text-LightLavender pb-2">Your scored higher than 65% of the people who have taken these tests.</p>
+            </div>
+        </div>
+        <!-- White Section -->
+        <div class="white md:w-full p-4">
+            <div class="">
+                <h3 class="">Summary</h3>
+                <!-- Stats -->
+                <div class="stats flex flex-col">
+                    <!-- Stats 1 -->
+                    <div class="stats-1 flex justify-between items-center p-4 md:p-p20 rounded-lg my-1">
+                        <div class="flex space-x-2">
+                            <img src="./img/icon-reaction.svg" alt="">
+                            <p class="text-LightRed">Reaction</p>
+                        </div>
+                        <div>
+                            <p>80 <span class="text-LightLavender">/ 100</span></p>
+                        </div>
+                    </div>
+                     <!-- Stats 2 -->
+                     <div class="stats-2 flex justify-between items-center p-4 md:p-p20 rounded-lg my-1">
+                        <div class="flex space-x-2">
+                            <img src="./img/icon-memory.svg" alt="">
+                            <p class="text-OrangeYello">Memory</p>
+                        </div>
+                        <div>
+                            <p>92 <span class="text-LightLavender">/ 100</span></p>
+                        </div>
+                    </div>
+
+                     <!-- Stats 3 -->
+                     <div class="stats-3 flex justify-between items-center p-4 md:p-p20 rounded-lg my-1">
+                        <div class="flex space-x-2">
+                            <img src="./img/icon-verbal.svg" alt="">
+                            <p class="text-GreenTeal">Verbal</p>
+                        </div>
+                        <div>
+                            <p>61 <span class="text-LightLavender">/ 100</span></p>
+                        </div>
+                    </div>
+
+                     <!-- Stats 4 -->
+                     <div class="stats-4 flex justify-between items-center p-4 md:p-p20 border rounded-lg my-1">
+                        <div class="flex space-x-2">
+                            <img src="./img/icon-visual.svg" alt="">
+                            <p class="text-CobaltBlue">Visual</p>
+                        </div>
+                        <div>
+                            <p>72 <span class="text-LightLavender">/ 100</span></p>
+                        </div>
+                    </div>
+
+                    <button class="flex justify-center items-center p-4 bg-DarkGrayBlue text-white rounded-full my-2 cursor-pointer">
+                        <p class="animate-pulse">Continue</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

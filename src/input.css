@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.circle{
+    background-image: linear-gradient(to bottom,rgb(67, 17, 206),hsla(241, 87%, 55%, 0));
+}
+
+.head{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    line-height: 3rem;
+}
+
+.stats-1{
+    background-color: hsla(0, 79%, 89%, 0.203);
+}
+
+.stats-2{
+    background-color: hsla(39, 75%, 81%, 0.203);
+}
+
+.stats-3{
+    background-color: hsla(166, 100%, 91%, 0.203);
+}
+
+.stats-4{
+    background-color: hsla(234, 76%, 80%, 0.203);
+}
+
+.stats-1, 
+.stats-2, 
+.stats-3, 
+.stats-4{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-1::after,
+.stats-2::after, 
+.stats-3::after, 
+.stats-4::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: hsla(0, 64%, 89%, 0.441);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.stats-2::after{
+    background-color: hsla(38, 85%, 74%, 0.264);
+}
+
+.stats-3::after{
+    background-color: hsla(150, 85%, 74%, 0.281);
+}
+
+.stats-4::after{
+    background-color: hsla(230, 84%, 80%, 0.232);
+}
+
+.stats-1:hover::after,
+.stats-2:hover::after,
+.stats-3:hover::after,
+.stats-4:hover::after{
+    width: 100%;
+}
+
